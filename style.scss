@@ -39,6 +39,16 @@
             justify-content: center !important;
             margin: 0;
             margin-top: 5px !important;
+
+            @include d(s) {
+                display: grid !important;
+                grid-template-columns: repeat(4, auto);
+
+                li a {
+                    font-size: 12px !important;
+                }
+            }
+
         }
 
         &__top-meun {
@@ -63,6 +73,7 @@
             flex-wrap: nowrap;
         }
     }
+
 
 }
 
