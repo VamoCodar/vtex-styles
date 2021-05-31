@@ -10,6 +10,7 @@
 }
 @media screen and (max-width: 992px) {
   .header__content {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
