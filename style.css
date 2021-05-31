@@ -45,4 +45,12 @@
 .B8T-InstitutionalHistory,
 .B8T-Account {
   margin-top: 120px;
+}
+
+.header {
+  transition: box-shadow 0.3s ease;
+}
+
+.ativo__scroll .header {
+  box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.09);
 }/*# sourceMappingURL=style.css.map */
