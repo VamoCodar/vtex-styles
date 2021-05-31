@@ -9,15 +9,31 @@
   margin-top: 20px !important;
 }
 .header__top-menu {
-  padding-top: 20px;
-  position: fixed;
+  padding-top: 0px;
+  position: initial !important;
   right: 5vw;
-  top: 60px;
+  top: 0px;
+  align-items: center;
+  position: initial;
+}
+.header__top-menu ul {
+  margin: 0 !important;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 @media only screen and (min-width: 992px) {
   header.header div.header__container {
     margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+  header.header div.header__container {
+    margin-bottom: 30px;
+  }
+
+  header.header .header__navigation-menu {
+    grid-column-gap: 30px !important;
   }
 }
 .main-banners {
