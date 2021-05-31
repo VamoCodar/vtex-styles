@@ -1,4 +1,6 @@
-.header {
+@import "./responsivo";
+
+header {
     position: fixed !important;
     top: 0;
     z-index: 99;
@@ -14,6 +16,36 @@
 
     }
 
+    &__content {
+        @include d(m) {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    @include d(m) {
+        &__logo {
+            width: 40% !important;
+            order: -2 !important;
+            margin: 0 !important;
+        }
+
+        &__navigation-menu {
+            order: 10 !important;
+            width: 100% !important;
+            align-self: center !important;
+            display: flex !important;
+            justify-content: center !important;
+            margin: 0;
+            margin-top: 5px !important;
+        }
+
+        &__top-meun {
+            order: -1;
+            width: 40%;
+            position: initial !important;
+        }
+    }
 
 
     &__top-menu {
