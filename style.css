@@ -16,7 +16,7 @@
 }
 
 @media only screen and (min-width: 992px) {
-  header.header .header__container {
+  header.header div.header__container {
     margin-bottom: 30px;
   }
 }
