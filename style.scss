@@ -111,5 +111,23 @@
 }
 
 .ativo__scroll .header {
-    box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, .09);
+    box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, .1);
+}
+
+
+
+header.header {
+    transition: transform .3s ease;
+    transform: translateY(0);
+}
+
+.ativo__scroll.desceu header.header {
+    transform: translateY(-105%);
+
+}
+
+
+.subiu header.header {
+    transform: translateY(0);
+
 }
