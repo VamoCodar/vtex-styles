@@ -11,6 +11,12 @@
 .header__container {
   margin-top: 20px !important;
 }
+@media screen and (max-width: 992px) {
+  .header__container {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
 .header__content {
   margin-bottom: 50px;
   flex-wrap: wrap;
@@ -18,9 +24,12 @@
 }
 @media screen and (max-width: 992px) {
   .header__content {
-    display: flex;
+    /*    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    display: grid; */
+    grid-template-areas: "logo car car" "nav nav nav ";
+    margin-bottom: 0 !important;
   }
 }
 @media screen and (max-width: 992px) {
@@ -28,6 +37,7 @@
     width: 40% !important;
     order: -2 !important;
     margin: 0 !important;
+    grid-area: logo;
   }
   .header__navigation-menu {
     order: 10 !important;
@@ -37,6 +47,11 @@
     justify-content: center !important;
     margin: 0;
     margin-top: 5px !important;
+  }
+}
+@media screen and (max-width: 992px) and (max-width: 992px) {
+  .header__navigation-menu {
+    grid-area: nav;
   }
 }
 @media screen and (max-width: 992px) and (max-width: 539px) {
@@ -64,6 +79,11 @@
   position: initial;
   width: 100%;
   order: -1;
+}
+@media screen and (max-width: 992px) {
+  .header__top-menu {
+    grid-area: car;
+  }
 }
 .header__top-menu ul {
   margin: 0 !important;
