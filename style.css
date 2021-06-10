@@ -65,10 +65,12 @@
   position: initial;
   width: 100%;
   order: -1;
+  margin-bottom: 15px !important;
 }
 @media screen and (max-width: 992px) {
   .header__top-menu {
     grid-area: car;
+    margin: 0 !important;
   }
 }
 .header__top-menu ul {
