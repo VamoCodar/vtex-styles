@@ -16,3 +16,22 @@ function menuPreenchido() {
 }
 menuPreenchido();
 window.addEventListener("scroll", menuPreenchido);
+
+
+window.onscroll = function (e) {
+    
+    let posicao = this.oldScroll > this.scrollY
+
+    this.oldScroll = this.scrollY;
+    if (posicao) {
+        document.body.classList.add("subiu")
+        document.body.classList.remove("desceu")
+
+    } else {
+        document.body.classList.remove("subiu")
+        document.body.classList.add("desceu")
+
+
+    }
+
+}
