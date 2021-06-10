@@ -88,7 +88,7 @@
   }
 
   header.header .header__navigation-menu {
-    grid-column-gap: 30px !important;
+    grid-column-gap: 30px;
   }
 }
 @media screen and (max-width: 992px) {
