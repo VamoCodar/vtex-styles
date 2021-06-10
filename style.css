@@ -6,7 +6,7 @@
   background: #ffffff;
 }
 .header__navigation-menu {
-  width: auto;
+  width: auto !important;
 }
 .header__container {
   margin-top: 20px !important;
