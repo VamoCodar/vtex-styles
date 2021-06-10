@@ -51,19 +51,6 @@
         }
 
         &__navigation-menu {
-            order: 10 !important;
-            width: 100% !important;
-            align-self: center !important;
-            display: flex !important;
-            justify-content: center !important;
-            margin: 0;
-            margin-top: 5px !important;
-            margin: 20px 0 !important;
-            grid-column-gap: 20px !important;
-            justify-content: space-around;
-            justify-content: space-between !important;
-            padding-right: 10px;
-            grid-area: nav;
 
 
             @include d(s) {
@@ -94,7 +81,8 @@
         position: initial;
         width: 100%;
         order: -1;
-        @include d(m){
+
+        @include d(m) {
             grid-area: car;
         }
 
@@ -126,6 +114,24 @@
     }
 }
 
+.header .header__navigation-menu {
+    @include d(m) {
+        order: 10 !important;
+        width: 100% !important;
+     
+        
+        display: grid !important;
+        
+        margin: 0;
+        margin-top: 5px !important;
+        margin: 20px 0 !important;
+        grid-column-gap: 20px !important;
+        justify-content: space-between !important;
+        padding-right: 10px;
+        grid-area: nav;
+
+    }
+}
 
 .main-banners {
     margin-top: 88px !important;
