@@ -23,7 +23,7 @@
     &__content {
         margin-bottom: 50px;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: center !important;
 
         @include d(m) {
             display: flex;
