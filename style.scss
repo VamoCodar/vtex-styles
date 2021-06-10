@@ -124,10 +124,11 @@
         
         margin: 0;
         margin-top: 5px !important;
-        margin: 20px 0 !important;
+        margin-bottom: 0 !important;
+        margin-top: 30px !important;
         grid-column-gap: 20px !important;
         justify-content: space-between !important;
-        padding-right: 10px;
+        padding-right: 10px !important;
         grid-area: nav;
 
     }
@@ -168,4 +169,10 @@ header.header {
 .subiu header.header {
     transform: translateY(0);
 
+}
+
+//banner
+.B8T-Home .page .main-banners--mobile{
+    height: calc(100vh - 137px) !important;
+    margin-top: 137px !important;
 }
