@@ -17,6 +17,10 @@
     }
 
     &__content {
+        margin-bottom: 50px;
+
+        align-items: center;
+
         @include d(m) {
             display: flex;
             flex-wrap: wrap;
