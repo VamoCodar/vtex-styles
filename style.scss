@@ -19,7 +19,6 @@
         margin-top: 20px !important;
 
         @include d(m) {
-            margin-bottom: 0 !important;
             padding-bottom: 0 !important;
         }
 
@@ -35,6 +34,7 @@
             flex-wrap: wrap;
             justify-content: space-between;
             display: grid; */
+            display: grid;
             grid-template-areas:
                 "logo car car"
                 "nav nav nav ";
@@ -58,10 +58,14 @@
             justify-content: center !important;
             margin: 0;
             margin-top: 5px !important;
+            margin: 20px 0 !important;
+            grid-column-gap: 20px !important;
+            justify-content: space-around;
+            /* margin-left: -30px; */
+            justify-content: space-between !important;
+            padding-right: 10px;
+            grid-area: nav;
 
-            @include d(m) {
-                grid-area: nav;
-            }
 
             @include d(s) {
                 display: grid !important;
