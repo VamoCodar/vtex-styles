@@ -153,4 +153,8 @@ header.header {
 
 .page {
   margin-top: 200px;
+}
+
+.B8T-Home .page {
+  margin-top: 0px !important;
 }/*# sourceMappingURL=style.css.map */
