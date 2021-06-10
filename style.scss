@@ -68,7 +68,7 @@
             order: -1;
             width: 40%;
             position: initial !important;
-            
+
         }
     }
 
@@ -84,6 +84,7 @@
         order: -1;
 
         margin-bottom: 15px !important;
+
         @include d(m) {
             grid-area: car;
             margin: 0 !important;
@@ -113,7 +114,7 @@
     }
 
     header.header .header__navigation-menu {
-        grid-column-gap: 30px ;
+        grid-column-gap: 30px;
     }
 }
 
@@ -121,10 +122,10 @@
     @include d(m) {
         order: 10 !important;
         width: 100% !important;
-     
-        
+
+
         display: grid !important;
-        
+
         margin: 0;
         margin-top: 5px !important;
         margin-bottom: 0 !important;
@@ -175,11 +176,16 @@ header.header {
 }
 
 //banner
-.B8T-Home .page .main-banners--mobile{
+.B8T-Home .page .main-banners--mobile {
     height: calc(100vh - 137px) !important;
     margin-top: 137px !important;
 }
-.B8T-Home .page .main-banners{
+
+.B8T-Home .page .main-banners {
     height: calc(100vh - 153px) !important;
     margin-top: 153px !important;
+}
+
+.page {
+    margin-top: 200px;
 }
