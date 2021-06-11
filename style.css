@@ -270,6 +270,9 @@ header.header .header__navigation-menu li.dropdown-menu .item__dropdown .dropdow
   right: 5px;
 }
 
+.main-banners {
+  position: relative;
+}
 .main-banners ion-icon {
   font-size: 28px;
   --ionicon-stroke-width: 12px;
