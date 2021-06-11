@@ -35,3 +35,10 @@ window.onscroll = function (e) {
     }
 
 }
+
+
+const imagens = document.querySelectorAll(".B8T-Home .page .main-banners img")
+
+function geraContent(){
+    
+}
