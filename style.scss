@@ -197,7 +197,8 @@ header.header {
 
 header.header .header__navigation-menu li.dropdown-menu .item__dropdown .dropdown-items {
     grid-template-columns: repeat(4, 1fr) !important;
-    @include d(m){
+
+    @include d(m) {
         grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)) !important;
     }
 }
@@ -210,7 +211,18 @@ header.header .header__navigation-menu li.dropdown-menu .item__dropdown .dropdow
 
 }
 
-@include d(m){
+@include d(m) {
+    .B8T-Home .page .main-banners .box-banner a {
+        &:after {
+            display: block !important;
+            visibility: initial !important;
+        
+        }
+
+    }
+}
+
+@include d(m) {
     header.header div.header__container {
         padding-bottom: 20px !important;
     }

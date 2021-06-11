@@ -174,6 +174,12 @@ header.header .header__navigation-menu li.dropdown-menu .item__dropdown .dropdow
 }
 
 @media screen and (max-width: 992px) {
+  .B8T-Home .page .main-banners .box-banner a:after {
+    display: block !important;
+    visibility: initial !important;
+  }
+}
+@media screen and (max-width: 992px) {
   header.header div.header__container {
     padding-bottom: 20px !important;
   }
