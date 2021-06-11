@@ -260,8 +260,8 @@ header.header .header__navigation-menu li.dropdown-menu .item__dropdown .dropdow
 }
 
 .B8T-Home .page .main-banners .slick-dots {
-    margin-top: -15px;
-    padding: 0;
-    z-index: 10;
-    position: relative;
+    margin-top: -15px !important;
+    padding: 0 !important;
+    z-index: 10 !important;
+    position: relative !important;
 }
