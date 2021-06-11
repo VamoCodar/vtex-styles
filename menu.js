@@ -59,10 +59,10 @@ $(document).ready(function () {
         const arrowPrev = document.querySelector(".B8T-Home .slick-prev")
 
         arrowPrev.innerHTML = `<ion-icon name="chevron-back-outline"></ion-icon>`
-        arrowPrev.style.opacity = "1",
+        arrowPrev.style.opacity = "1"
 
-            arrowNext.innerHTML = `<ion-icon name="chevron-forward-outline"></ion-icon>`
-        arrowNext.style.opacity = "1",
+        arrowNext.innerHTML = `<ion-icon name="chevron-forward-outline"></ion-icon>`
+        arrowNext.style.opacity = "1"
     }, 300);
 
 });
