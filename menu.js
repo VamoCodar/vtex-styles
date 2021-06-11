@@ -42,9 +42,11 @@ const imagens = document.querySelectorAll(".B8T-Home .page .main-banners img")
 function geraContent(){
     imagens.forEach((i)=>{
         const atributoAlt = i.alt
+        console.log(atributoAlt);
 
         i.parentElement.setAttribute("alt",atributoAlt )
 
     })
     
 }
+geraContent()
