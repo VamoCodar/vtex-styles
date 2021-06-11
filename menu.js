@@ -19,7 +19,7 @@ window.addEventListener("scroll", menuPreenchido);
 
 
 window.onscroll = function (e) {
-    
+
     let posicao = this.oldScroll > this.scrollY
 
     this.oldScroll = this.scrollY;
@@ -39,20 +39,22 @@ window.onscroll = function (e) {
 
 const imagens = document.querySelectorAll(".B8T-Home .page .main-banners img")
 
-function geraContent(){
-    imagens.forEach((i)=>{
+function geraContent() {
+    imagens.forEach((i) => {
         const atributoAlt = i.alt
         console.log(atributoAlt);
 
-        i.parentElement.setAttribute("alt",atributoAlt )
+        i.parentElement.setAttribute("alt", atributoAlt)
 
     })
-    
+
 }
 geraContent()
 
-const arrowNext = document.querySelector(".B8T-Home .slick-next")
-const arrowPrev = document.querySelector(".B8T-Home .slick-prev")
+setTimeout(() => {
+    const arrowNext = document.querySelector(".B8T-Home .slick-next")
+    const arrowPrev = document.querySelector(".B8T-Home .slick-prev")
 
-arrowNext.innerHTML=`<ion-icon name="chevron-back-outline"></ion-icon>`
-arrowPrev.innerHTML=`<ion-icon name="chevron-forward-outline"></ion-icon>`
+    arrowNext.innerHTML = `<ion-icon name="chevron-back-outline"></ion-icon>`
+    arrowPrev.innerHTML = `<ion-icon name="chevron-forward-outline"></ion-icon>`
+}, 300);
