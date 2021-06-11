@@ -161,4 +161,42 @@ header.header {
 
 header.header .header__navigation-menu li.dropdown-menu .item__dropdown .dropdown-items {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.B8T-Home .page .main-banners .box-banner a:hover:after {
+  display: block !important;
+  visibility: initial !important;
+}
+
+@media only screen and (min-width: 992px) {
+  .B8T-Home .page .main-banners .box-banner a::after {
+    content: attr(data-alt-name);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s ease-in;
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    color: white;
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 122px;
+  }
+}
+.B8T-Home .page .main-banners .box-banner a::after {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s ease-in;
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+  color: white;
+  font-size: 24px;
+  line-height: 32px;
+  max-width: 122px;
+}
+
+.B8T-Home .page .main-banners .box-banner a {
+  position: relative;
+  height: calc(100vh - 153px);
 }/*# sourceMappingURL=style.css.map */
