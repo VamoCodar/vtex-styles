@@ -205,7 +205,7 @@ header.header .header__navigation-menu li.dropdown-menu .item__dropdown .dropdow
     }
 
 }
-
+/* 
 
 @media only screen and (min-width: 992px) {
     .B8T-Home .page .main-banners .box-banner a::after {
@@ -235,10 +235,16 @@ header.header .header__navigation-menu li.dropdown-menu .item__dropdown .dropdow
     line-height: 32px;
     max-width: 122px;
 }
-
+ */
 .B8T-Home .page .main-banners .box-banner a {
     position: relative;
     height: calc(100vh - 153px);
 }
 
+@media only screen and (max-width: 359px) {
+    header.header .header__navigation-menu {
+        grid-auto-flow: column;
 
+    }
+
+}
