@@ -54,10 +54,15 @@ geraContent()
 
 $(document).ready(function () {
 
-    const arrowNext = document.querySelector(".B8T-Home .slick-next")
-    const arrowPrev = document.querySelector(".B8T-Home .slick-prev")
+    setTimeout(() => {
+        const arrowNext = document.querySelector(".B8T-Home .slick-next")
+        const arrowPrev = document.querySelector(".B8T-Home .slick-prev")
 
-    arrowPrev.innerHTML = `<ion-icon name="chevron-back-outline"></ion-icon>`
-    arrowNext.innerHTML = `<ion-icon name="chevron-forward-outline"></ion-icon>`
-    
+        arrowPrev.innerHTML = `<ion-icon name="chevron-back-outline"></ion-icon>`
+        arrowPrev.style.opacity = "1",
+
+            arrowNext.innerHTML = `<ion-icon name="chevron-forward-outline"></ion-icon>`
+        arrowNext.style.opacity = "1",
+    }, 300);
+
 });
