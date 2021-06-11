@@ -50,3 +50,9 @@ function geraContent(){
     
 }
 geraContent()
+
+const arrowNext = document.querySelector(".B8T-Home .slick-next")
+const arrowPrev = document.querySelector(".B8T-Home .slick-prev")
+
+arrowNext.innerHTML=`<ion-icon name="chevron-back-outline"></ion-icon>`
+arrowPrev.innerHTML=`<ion-icon name="chevron-forward-outline"></ion-icon>`

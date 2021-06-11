@@ -243,4 +243,27 @@ header.header .header__navigation-menu li.dropdown-menu .item__dropdown .dropdow
   padding: 0 !important;
   z-index: 10 !important;
   position: relative !important;
+  display: none !important;
+}
+
+.slick-next,
+.slick-prev {
+  position: absolute;
+  bottom: 0;
+  margin: auto 0;
+  top: 0;
+  height: 50px;
+  width: 50px;
+  background: transparent;
+  border: initial;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 5px;
+}
+
+.slick-next {
+  right: 5px;
 }/*# sourceMappingURL=style.css.map */
