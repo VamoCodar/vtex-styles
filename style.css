@@ -162,12 +162,22 @@ header.header {
 header.header .header__navigation-menu li.dropdown-menu .item__dropdown .dropdown-items {
   grid-template-columns: repeat(4, 1fr) !important;
 }
+@media screen and (max-width: 992px) {
+  header.header .header__navigation-menu li.dropdown-menu .item__dropdown .dropdown-items {
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)) !important;
+  }
+}
 
 .B8T-Home .page .main-banners .box-banner a:hover:after {
   display: block !important;
   visibility: initial !important;
 }
 
+@media screen and (max-width: 992px) {
+  header.header div.header__container {
+    padding-bottom: 20px !important;
+  }
+}
 /* 
 
 @media only screen and (min-width: 992px) {

@@ -118,6 +118,7 @@
     }
 }
 
+
 .header .header__navigation-menu {
     @include d(m) {
         order: 10 !important;
@@ -195,7 +196,10 @@ header.header {
 }
 
 header.header .header__navigation-menu li.dropdown-menu .item__dropdown .dropdown-items {
-    grid-template-columns: repeat(4, 1fr) !important;;
+    grid-template-columns: repeat(4, 1fr) !important;
+    @include d(m){
+        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)) !important;
+    }
 }
 
 .B8T-Home .page .main-banners .box-banner a:hover {
@@ -204,6 +208,12 @@ header.header .header__navigation-menu li.dropdown-menu .item__dropdown .dropdow
         visibility: initial !important;
     }
 
+}
+
+@include d(m){
+    header.header div.header__container {
+        padding-bottom: 20px !important;
+    }
 }
 
 /* 
