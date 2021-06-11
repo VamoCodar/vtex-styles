@@ -157,4 +157,8 @@ header.header {
 
 .B8T-Home .page {
   margin-top: 0px !important;
+}
+
+header.header .header__navigation-menu li.dropdown-menu .item__dropdown .dropdown-items {
+  grid-template-columns: repeat(4, 1fr);
 }/*# sourceMappingURL=style.css.map */
